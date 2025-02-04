@@ -55,7 +55,7 @@ The goal of this project is to create a dashboard that visualizes SpaceX launch 
    ```
 4. Run the Dash application:
    ```bash
-   python app.py
+   python main.py
    ```
 
 ## Conclusion
