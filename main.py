@@ -1,8 +1,7 @@
 # Import required libraries
 import pandas as pd
 import dash
-from dash import dcc
-import dash_html_components as html
+from dash import dcc, html
 from dash.dependencies import Input, Output
 import plotly.express as px
 
@@ -98,4 +97,7 @@ def get_scatter_chart(entered_site, payload_range):
 
 #Run the application
 if __name__ == '__main__':
-    app.run_server()
+    app.run(debug=True)
+
+# For Azure Web App deployment, expose the server
+server = app.server
